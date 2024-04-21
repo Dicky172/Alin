@@ -6,3 +6,4 @@ root: intro
 chapters:
 - file: tugas1_aljabar_linear
 - file: tugas2_matriks
+- file: tugas3
