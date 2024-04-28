@@ -2,8 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: tugas1_aljabar_linear
 chapters:
-- file: tugas1_aljabar_linear
 - file: tugas2_matriks
 - file: Tugas3
