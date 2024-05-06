@@ -6,4 +6,4 @@ root: tugas1_aljabar_linear
 chapters:
 - file: tugas2_matriks
 - file: Tugas3
-- file: tugas4_Determinan_Matriks
+- file: Determinan_Matriks
