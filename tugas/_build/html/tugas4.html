@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -381,8 +381,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="determinan-matriks">
 <h1>Determinan matriks<a class="headerlink" href="#determinan-matriks" title="Link to this heading">#</a></h1>
-<p>Determinan matriks
-ordo matriksnya harus sama</p>
+<p>ordo matriksnya harus sama</p>
 <p>-determinana dari matriks identitas adalah satu secara keseluruhan</p>
 <p>-merubah baris akan mempengaruhi tanda dari determinan</p>
 <p>-jika matriks ada baris/kolom yang merupakan 2x dari baris/kolom yang lain determinannya adalah 0</p>
@@ -449,9 +448,9 @@ kolomnya pertama di tambahkan maka akan menjadi:<br />
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
 <span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
-<span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span> 
+<span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span> <span class="c1">#baris 2 merupakan 2x baris 1 matriks d</span>
 <span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> 
+<span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> <span class="c1">#matriks ini merupakan 2x matriks d</span>
 <span class="n">h</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
 
@@ -482,6 +481,228 @@ kolomnya pertama di tambahkan maka akan menjadi:<br />
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
 2.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>formulasi bentuk determinan</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">det11</span><span class="o">=</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+       <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+       <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
+
+<span class="n">kxjsk</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">det11</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">kxjsk</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9999999999999996
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Definisikan matriks yang ingin diinvers</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Cari invers dari matriks A</span>
+<span class="n">A_inverse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriks A:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Invers dari matriks A:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A_inverse</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriks A:
+[[3 1 3]
+ [2 1 2]
+ [4 2 1]]
+
+Invers dari matriks A:
+[[ 1.         -1.66666667  0.33333333]
+ [-2.          3.         -0.        ]
+ [ 0.          0.66666667 -0.33333333]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>menghitung determinan dan invers metriks
+menghitung invers matriks 5x5</p>
+<p>Tentukan Matriks dan Ordo:
+Misalkan matriks yang diberikan adalah ( A ) dengan ordo ( 5 \times 5 ):</p>
+<p>[ A = \begin{bmatrix}
+1 &amp; 0 &amp; 4 &amp; -6 &amp; 3 \
+2 &amp; 5 &amp; 0 &amp; 3 &amp; 1 \
+-1 &amp; 2 &amp; 3 &amp; 5 &amp; -2 \
+2 &amp; 1 &amp; -2 &amp; 3 &amp; 0 \
+3 &amp; -1 &amp; 1 &amp; 0 &amp; 2 \
+\end{bmatrix} ]</p>
+<p>Kita akan menghitung determinan det(A) dengan menggunakan ekspansi kofaktor terhadap baris pertama. Rumusnya adalah:
+[ \det(A) = a_{11} C_{11} - a_{12} C_{12} + a_{13} C_{13} - a_{14} C_{14} + a_{15} C_{15} ]
+di mana ( a_{11}, a_{12}, a_{13}, a_{14}, a_{15} ) adalah elemen-elemen baris pertama matriks A, dan ( C_{11}, C_{12}, C_{13}, C_{14}, C_{15} ) adalah kofaktor-kofaktor yang sesuai.</p>
+<p>Langkah-langkahnya adalah sebagai berikut:</p>
+<ol class="arabic">
+<li><p><strong>Tentukan Elemen dan Kofaktor:</strong></p>
+<ul class="simple">
+<li><p>( a_{11} = 1, a_{12} = 0, a_{13} = 4, a_{14} = -6, a_{15} = 3 )</p></li>
+</ul>
+</li>
+<li><p><strong>Hitung Kofaktor ( C_{11}, C_{12}, C_{13}, C_{14}, C_{15} ):</strong></p>
+<ul class="simple">
+<li><p>( C_{11} = \det(M_{11}) )</p></li>
+<li><p>( C_{12} = -\det(M_{12}) )</p></li>
+<li><p>( C_{13} = \det(M_{13}) )</p></li>
+<li><p>( C_{14} = -\det(M_{14}) )</p></li>
+<li><p>( C_{15} = \det(M_{15}) )</p></li>
+</ul>
+<p>di mana ( M_{ij} ) adalah matriks minor dari A setelah menghapus baris pertama dan kolom ke-j</p>
+</li>
+<li><p><strong>Hitung Determinan Masing-masing Minor:</strong></p>
+<p>( M_{11} = \begin{bmatrix}
+5 &amp; 0 &amp; 3 &amp; 1 \
+2 &amp; 3 &amp; 5 &amp; -2 \
+1 &amp; -2 &amp; 3 &amp; 0 \
+-1 &amp; 1 &amp; 0 &amp; 2 \
+\end{bmatrix} )</p>
+<p>[ \det(M_{11}) = 5 \det\begin{bmatrix}
+3 &amp; 5 &amp; -2 \
+-2 &amp; 3 &amp; 0 \
+1 &amp; 0 &amp; 2 \
+\end{bmatrix} - 0 + 3 \det\begin{bmatrix}
+2 &amp; 3 &amp; -2 \
+1 &amp; -2 &amp; 0 \
+-1 &amp; 1 &amp; 2 \
+\end{bmatrix} - 1 \det\begin{bmatrix}
+2 &amp; 3 &amp; 5 \
+1 &amp; -2 &amp; 3 \
+-1 &amp; 1 &amp; 0 \
+\end{bmatrix} ]</p>
+<p>[ \det(M_{11}) = 5(-30) + 3(0) - (-16) = -150 + 0 + 16 = -134 ]</p>
+<p>( M_{12} = \begin{bmatrix}
+2 &amp; 0 &amp; 3 &amp; 1 \
+-1 &amp; 3 &amp; 5 &amp; -2 \
+2 &amp; -2 &amp; 3 &amp; 0 \
+3 &amp; 1 &amp; 0 &amp; 2 \
+\end{bmatrix} )</p>
+<p>[ \det(M_{12}) = -(2 \det\begin{bmatrix}
+3 &amp; 5 &amp; -2 \
+-2 &amp; 3 &amp; 0 \
+1 &amp; 0 &amp; 2 \
+\end{bmatrix}) = -(2 \times (-30)) = 60 ]</p>
+<p>( M_{13} = \begin{bmatrix}
+2 &amp; 5 &amp; 3 &amp; 1 \
+-1 &amp; 2 &amp; 5 &amp; -2 \
+2 &amp; 1 &amp; 3 &amp; 0 \
+3 &amp; -1 &amp; 0 &amp; 2 \
+\end{bmatrix} )</p>
+<p>[ \det(M_{13}) = 2 \det\begin{bmatrix}
+2 &amp; 3 &amp; -2 \
+1 &amp; -2 &amp; 0 \
+-1 &amp; 1 &amp; 2 \
+\end{bmatrix} - 5 \det\begin{bmatrix}
+-1 &amp; 5 &amp; -2 \
+2 &amp; 3 &amp; 0 \
+3 &amp; 0 &amp; 2 \
+\end{bmatrix} + 3 \det\begin{bmatrix}
+-1 &amp; 2 &amp; -2 \
+2 &amp; 1 &amp; 0 \
+3 &amp; -1 &amp; 2 \
+\end{bmatrix} - 1 \det\begin{bmatrix}
+-1 &amp; 2 &amp; 5 \
+2 &amp; 1 &amp; 3 \
+3 &amp; -1 &amp; 0 \
+\end{bmatrix} ]</p>
+<p>[ \det(M_{13}) = 2(22) - 5(20) + 0 + 3(28) - (-16) = 44 - 100 + 84 + 16 = 44 ]</p>
+<p>( M_{14} = \begin{bmatrix}
+2 &amp; 5 &amp; 0 &amp; 1 \
+-1 &amp; 2 &amp; 3 &amp; -2 \
+2 &amp; 1 &amp; -2 &amp; 0 \
+3 &amp; -1 &amp; 1 &amp; 2 \
+\end{bmatrix} )</p>
+<p>[ \det(M_{14}) = -(2 \det\begin{bmatrix}
+2 &amp; 3 &amp; -2 \
+1 &amp; -2 &amp; 0 \
+-1 &amp; 1 &amp; 2 \
+\end{bmatrix}) = -(2 \times 6) = -12 ]</p>
+<p>( M_{15} = \begin{bmatrix}
+2 &amp; 5 &amp; 0 &amp; 3 \
+-1 &amp; 2 &amp; 3 &amp; 5 \
+2 &amp; 1 &amp; -2 &amp; 3 \
+3 &amp; -1 &amp; 1 &amp; 0 \
+\end{bmatrix} )</p>
+<p>[ \det(M_{15}) = 2 \det\begin{bmatrix}
+2 &amp; 3 &amp; 5 \
+1 &amp; -2 &amp; 3 \
+-1 &amp; 1 &amp; 0 \
+\end{bmatrix} - 5 \det\begin{bmatrix}
+-1 &amp; 3 &amp; 5 \
+2 &amp; -2 &amp; 3 \
+3 &amp; 0 &amp; 2 \
+\end{bmatrix} + 0 \det\begin{bmatrix}
+-1 &amp; 2 &amp; 5 \
+2 &amp; 1 &amp; 3 \
+3 &amp; -1 &amp; 0 \
+\end{bmatrix} - 3 \det\begin{bmatrix}
+-1 &amp; 2 &amp; 3 \
+2 &amp; 1 &amp; -2 \
+3 &amp; -1 &amp; 1 \
+\end{bmatrix} ]</p>
+<p>[ \det(M_{15}) = 2(22) - 5(20) + 0 - 3(-6) = 44 - 100 + 0 - 18 = -74 ]</p>
+</li>
+<li><p><strong>Hitung Determinan Utama:</strong>
+[ \det(A) = (1)(-134) - (0)(60) + (4)(44) - (-6)(-12) + (3)(-74) ]
+[ \det(A) = -134 + 0 + 176 - 72 - 222 ]
+[ \det(A) = -252 ]</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">minor</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+    <span class="c1"># Menghapus baris ke-i dan kolom ke-j</span>
+    <span class="n">minor_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">j</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">minor_matrix</span>
+
+<span class="k">def</span> <span class="nf">determinant</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="c1"># Basis kasus untuk matriks 1x1</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">det</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+        <span class="c1"># Menghitung kofaktor</span>
+        <span class="n">cofactor</span> <span class="o">=</span> <span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">**</span> <span class="n">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">determinant</span><span class="p">(</span><span class="n">minor</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>
+        <span class="n">det</span> <span class="o">+=</span> <span class="n">cofactor</span>
+    <span class="k">return</span> <span class="n">det</span>
+
+<span class="c1"># Matriks A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="c1"># Menghitung determinan</span>
+<span class="n">det_A</span> <span class="o">=</span> <span class="n">determinant</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;determinan </span><span class="si">{</span><span class="n">det_A</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>determinan 228
 </pre></div>
 </div>
 </div>
