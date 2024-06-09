@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas4';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Transformasi Matriks" href="TransformasiMatriks.html" />
+    <link rel="next" title="Transformasi Matriks" href="Tugas5.html" />
     <link rel="prev" title="tugas 3" href="Tugas3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,7 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Tugas3.html">tugas 3</a></li>
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Determinan matriks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TransformasiMatriks.html">Transformasi Matriks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas5.html">Transformasi Matriks</a></li>
 </ul>
 
     </div>
@@ -356,7 +356,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -372,6 +374,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formulasi-bentuk-determinan">formulasi bentuk determinan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-determinan-dan-invers-metriks">menghitung determinan dan invers metriks</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -390,30 +401,45 @@ document.write(`
 <p>-matriks yang merupakan kelipatan dari matriks lain maka determinan dari matriks kelipatannya adalah:
 kelipatan pangkat ordo di kali determinan matriks pertaman
 misal determinan matriks pertama 3, maka determinan matriks ke 2 adalah 24
-misal mat1=<br />
+misal mat1=\</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-1 &amp; 2\
+1 &amp; 2\\
 2 &amp; 1
-\end{bmatrix} determinan= 2<br />
-dan mat 2 yang merupakan kelipatan 2x mat 1:
+\end{bmatrix}
+\end{split}\]</div>
+<p>determinan= 2<br />
+dan mat 2 yang merupakan kelipatan 2x mat 1:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-2 &amp; 4\
+2 &amp; 4\\
 4 &amp; 4
-\end{bmatrix} determinan=12<br />
-rumusnya:: <span class="math notranslate nohighlight">\(x^2dikali(determinan)\)</span></p>
+\end{bmatrix} determinan=12\
+\end{split}\]</div>
+<p>rumusnya:: <span class="math notranslate nohighlight">\(x^2dikali(determinan)\)</span></p>
 <p>-jika ada matriks yang barisnya merupakan kelipatan 2 dari baris matriks lain maka determinannya adalah 2x dari matrikx pertama:
 misal determinan matrtiks ke 1 = 5, maka determinan matriks ke 2 adalah 10<br />
 contoh:<br />
-Misalkan kita punya matriks <br />
+Misalkan kita punya matriks \</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 𝐴=\begin{bmatrix}
-3 &amp; 4\
+3 &amp; 4\\
 2 &amp; 1
-\end{bmatrix}. Maka determinan dari matriks =-5</p>
-<p>Sekarang, jika kita gandakan baris pertama dari matriks
+\end{bmatrix}
+\end{split}\]</div>
+<p>Maka determinan dari matriks =-5
+Sekarang, jika kita gandakan baris pertama dari matriks</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 𝐴2= \begin{bmatrix}
-6 &amp; 8\
+6 &amp; 8\\
 2 &amp; 1
-\end{bmatrix} dengan determinannya adalah -10
+\end{bmatrix}
+\end{split}\]</div>
+<p>dengan determinannya adalah -10
 Ini menunjukkan bahwa ketika kita menggandakan baris pertama matriks
 𝐴
 A dengan faktor skalar (dalam hal ini 2), determinan dari matriks hasil
@@ -426,21 +452,30 @@ A2</p>
 misal determinan matriks 1 = 5 maka determinan matriks ke 2 = 20</p>
 <p>-jika baris matriks merupakan hasil pengurangan dari determinan matriks lain maka baris matriksnya ke2 adalah hasil pengurangan dari baris matriks ke1:
 misal<br />
-mat1=<br />
+mat1=\</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-3 &amp; 4\
+3 &amp; 4\\
 2 &amp; 1
 \end{bmatrix}
-mat2=
+\end{split}\]</div>
+<p>mat2=</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-4 &amp; 7\
+4 &amp; 7\\
 2 &amp; 1
 \end{bmatrix}
-kolomnya pertama di tambahkan maka akan menjadi:<br />
+\end{split}\]</div>
+<p>kolomnya pertama di tambahkan maka akan menjadi:\</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-1 &amp; 3\
+1 &amp; 3\\
 2 &amp; 1
-\end{bmatrix}</p>
+\end{bmatrix}
+\end{split}\]</div>
 <p>-jika metriks merupakan tipe matriks segitiga atas/bawah atau matriks diagonal makan determinan merupakan hasil kali dari diagonal utamanya</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -487,7 +522,8 @@ kolomnya pertama di tambahkan maka akan menjadi:<br />
 </div>
 </div>
 </div>
-<p>formulasi bentuk determinan</p>
+<section id="formulasi-bentuk-determinan">
+<h2>formulasi bentuk determinan<a class="headerlink" href="#formulasi-bentuk-determinan" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">det11</span><span class="o">=</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
@@ -539,134 +575,238 @@ Invers dari matriks A:
 </div>
 </div>
 </div>
-<p>menghitung determinan dan invers metriks
-menghitung invers matriks 5x5</p>
-<p>Tentukan Matriks dan Ordo:
-Misalkan matriks yang diberikan adalah ( A ) dengan ordo ( 5 \times 5 ):</p>
-<p>[ A = \begin{bmatrix}
-1 &amp; 0 &amp; 4 &amp; -6 &amp; 3 \
-2 &amp; 5 &amp; 0 &amp; 3 &amp; 1 \
--1 &amp; 2 &amp; 3 &amp; 5 &amp; -2 \
-2 &amp; 1 &amp; -2 &amp; 3 &amp; 0 \
-3 &amp; -1 &amp; 1 &amp; 0 &amp; 2 \
-\end{bmatrix} ]</p>
-<p>Kita akan menghitung determinan det(A) dengan menggunakan ekspansi kofaktor terhadap baris pertama. Rumusnya adalah:
-[ \det(A) = a_{11} C_{11} - a_{12} C_{12} + a_{13} C_{13} - a_{14} C_{14} + a_{15} C_{15} ]
-di mana ( a_{11}, a_{12}, a_{13}, a_{14}, a_{15} ) adalah elemen-elemen baris pertama matriks A, dan ( C_{11}, C_{12}, C_{13}, C_{14}, C_{15} ) adalah kofaktor-kofaktor yang sesuai.</p>
-<p>Langkah-langkahnya adalah sebagai berikut:</p>
-<ol class="arabic">
-<li><p><strong>Tentukan Elemen dan Kofaktor:</strong></p>
-<ul class="simple">
-<li><p>( a_{11} = 1, a_{12} = 0, a_{13} = 4, a_{14} = -6, a_{15} = 3 )</p></li>
-</ul>
-</li>
-<li><p><strong>Hitung Kofaktor ( C_{11}, C_{12}, C_{13}, C_{14}, C_{15} ):</strong></p>
-<ul class="simple">
-<li><p>( C_{11} = \det(M_{11}) )</p></li>
-<li><p>( C_{12} = -\det(M_{12}) )</p></li>
-<li><p>( C_{13} = \det(M_{13}) )</p></li>
-<li><p>( C_{14} = -\det(M_{14}) )</p></li>
-<li><p>( C_{15} = \det(M_{15}) )</p></li>
-</ul>
-<p>di mana ( M_{ij} ) adalah matriks minor dari A setelah menghapus baris pertama dan kolom ke-j</p>
-</li>
-<li><p><strong>Hitung Determinan Masing-masing Minor:</strong></p>
-<p>( M_{11} = \begin{bmatrix}
-5 &amp; 0 &amp; 3 &amp; 1 \
-2 &amp; 3 &amp; 5 &amp; -2 \
-1 &amp; -2 &amp; 3 &amp; 0 \
--1 &amp; 1 &amp; 0 &amp; 2 \
-\end{bmatrix} )</p>
-<p>[ \det(M_{11}) = 5 \det\begin{bmatrix}
-3 &amp; 5 &amp; -2 \
--2 &amp; 3 &amp; 0 \
-1 &amp; 0 &amp; 2 \
-\end{bmatrix} - 0 + 3 \det\begin{bmatrix}
-2 &amp; 3 &amp; -2 \
-1 &amp; -2 &amp; 0 \
--1 &amp; 1 &amp; 2 \
-\end{bmatrix} - 1 \det\begin{bmatrix}
-2 &amp; 3 &amp; 5 \
-1 &amp; -2 &amp; 3 \
--1 &amp; 1 &amp; 0 \
-\end{bmatrix} ]</p>
-<p>[ \det(M_{11}) = 5(-30) + 3(0) - (-16) = -150 + 0 + 16 = -134 ]</p>
-<p>( M_{12} = \begin{bmatrix}
-2 &amp; 0 &amp; 3 &amp; 1 \
--1 &amp; 3 &amp; 5 &amp; -2 \
-2 &amp; -2 &amp; 3 &amp; 0 \
-3 &amp; 1 &amp; 0 &amp; 2 \
-\end{bmatrix} )</p>
-<p>[ \det(M_{12}) = -(2 \det\begin{bmatrix}
-3 &amp; 5 &amp; -2 \
--2 &amp; 3 &amp; 0 \
-1 &amp; 0 &amp; 2 \
-\end{bmatrix}) = -(2 \times (-30)) = 60 ]</p>
-<p>( M_{13} = \begin{bmatrix}
-2 &amp; 5 &amp; 3 &amp; 1 \
--1 &amp; 2 &amp; 5 &amp; -2 \
-2 &amp; 1 &amp; 3 &amp; 0 \
-3 &amp; -1 &amp; 0 &amp; 2 \
-\end{bmatrix} )</p>
-<p>[ \det(M_{13}) = 2 \det\begin{bmatrix}
-2 &amp; 3 &amp; -2 \
-1 &amp; -2 &amp; 0 \
--1 &amp; 1 &amp; 2 \
-\end{bmatrix} - 5 \det\begin{bmatrix}
--1 &amp; 5 &amp; -2 \
-2 &amp; 3 &amp; 0 \
-3 &amp; 0 &amp; 2 \
-\end{bmatrix} + 3 \det\begin{bmatrix}
--1 &amp; 2 &amp; -2 \
-2 &amp; 1 &amp; 0 \
-3 &amp; -1 &amp; 2 \
-\end{bmatrix} - 1 \det\begin{bmatrix}
--1 &amp; 2 &amp; 5 \
-2 &amp; 1 &amp; 3 \
-3 &amp; -1 &amp; 0 \
-\end{bmatrix} ]</p>
-<p>[ \det(M_{13}) = 2(22) - 5(20) + 0 + 3(28) - (-16) = 44 - 100 + 84 + 16 = 44 ]</p>
-<p>( M_{14} = \begin{bmatrix}
-2 &amp; 5 &amp; 0 &amp; 1 \
--1 &amp; 2 &amp; 3 &amp; -2 \
-2 &amp; 1 &amp; -2 &amp; 0 \
-3 &amp; -1 &amp; 1 &amp; 2 \
-\end{bmatrix} )</p>
-<p>[ \det(M_{14}) = -(2 \det\begin{bmatrix}
-2 &amp; 3 &amp; -2 \
-1 &amp; -2 &amp; 0 \
--1 &amp; 1 &amp; 2 \
-\end{bmatrix}) = -(2 \times 6) = -12 ]</p>
-<p>( M_{15} = \begin{bmatrix}
-2 &amp; 5 &amp; 0 &amp; 3 \
--1 &amp; 2 &amp; 3 &amp; 5 \
-2 &amp; 1 &amp; -2 &amp; 3 \
-3 &amp; -1 &amp; 1 &amp; 0 \
-\end{bmatrix} )</p>
-<p>[ \det(M_{15}) = 2 \det\begin{bmatrix}
-2 &amp; 3 &amp; 5 \
-1 &amp; -2 &amp; 3 \
--1 &amp; 1 &amp; 0 \
-\end{bmatrix} - 5 \det\begin{bmatrix}
--1 &amp; 3 &amp; 5 \
-2 &amp; -2 &amp; 3 \
-3 &amp; 0 &amp; 2 \
-\end{bmatrix} + 0 \det\begin{bmatrix}
--1 &amp; 2 &amp; 5 \
-2 &amp; 1 &amp; 3 \
-3 &amp; -1 &amp; 0 \
-\end{bmatrix} - 3 \det\begin{bmatrix}
--1 &amp; 2 &amp; 3 \
-2 &amp; 1 &amp; -2 \
-3 &amp; -1 &amp; 1 \
-\end{bmatrix} ]</p>
-<p>[ \det(M_{15}) = 2(22) - 5(20) + 0 - 3(-6) = 44 - 100 + 0 - 18 = -74 ]</p>
-</li>
-<li><p><strong>Hitung Determinan Utama:</strong>
-[ \det(A) = (1)(-134) - (0)(60) + (4)(44) - (-6)(-12) + (3)(-74) ]
-[ \det(A) = -134 + 0 + 176 - 72 - 222 ]
-[ \det(A) = -252 ]</p></li>
+</section>
+<section id="menghitung-determinan-dan-invers-metriks">
+<h2>menghitung determinan dan invers metriks<a class="headerlink" href="#menghitung-determinan-dan-invers-metriks" title="Link to this heading">#</a></h2>
+<p>menghitung invers matriks 5x5</p>
+<p>###Tentukan Matriks dan Ordo:
+Misalkan matriks yang diberikan adalah ( A ) dengan ordo ( 5 \times 5 ):
+A=</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 0 &amp; 4 &amp; -6 &amp; 3 \\
+2 &amp; 5 &amp; 0 &amp; 3 &amp; 1 \\
+-1 &amp; 2 &amp; 3 &amp; 5 &amp; -2 \\
+2 &amp; 1 &amp; -2 &amp; 3 &amp; 0 \\
+3 &amp; -1 &amp; 1 &amp; 0 &amp; 2
+\end{bmatrix}
+\end{split}\]</div>
+<p>###Kita akan menghitung determinan det(A) dengan menggunakan ekspansi kofaktor terhadap baris pertama. Rumusnya adalah:
+$<span class="math notranslate nohighlight">\(
+\det(A) = a_{11} C_{11} - a_{12} C_{12} + a_{13} C_{13} - a_{14} C_{14} + a_{15} C_{15}
+\)</span>$</p>
+<p>Di mana</p>
+<div class="math notranslate nohighlight">
+\[
+ a_{11}, a_{12}, a_{13}, a_{14}, a_{15}
+\]</div>
+<p>adalah elemen-elemen baris pertama matriks</p>
+<div class="math notranslate nohighlight">
+\[
+ A , dan C_{11}, C_{12}, C_{13}, C_{14}, C_{15}
+\]</div>
+<p>adalah kofaktor-kofaktor yang sesuai.</p>
+<p>###Langkah-langkahnya adalah sebagai berikut:</p>
+<ol class="arabic simple">
+<li><p><strong>Tentukan Elemen dan Kofaktor:</strong></p></li>
 </ol>
+<div class="math notranslate nohighlight">
+\[
+   a_{11} = 1, a_{12} = 0, a_{13} = 4, a_{14} = -6, a_{15} = 3
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>**Hitung Kofaktor</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+C_{11}, C_{12}, C_{13}, C_{14}, C_{15}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   C_{11} = \det(M_{11})\\
+   C_{12} = -\det(M_{12})\\
+   C_{13} = \det(M_{13})\\
+   C_{14} = -\det(M_{14})\\
+   C_{15} = \det(M_{15})
+\end{split}\]</div>
+<p>di mana</p>
+<div class="math notranslate nohighlight">
+\[  M_{ij}
+   \]</div>
+<p>adalah matriks minor dari A setelah menghapus baris pertama dan kolom ke-j</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Hitung Determinan Masing-masing Minor:</strong></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   M_{11} = \begin{bmatrix}
+   5 &amp; 0 &amp; 3 &amp; 1 \\
+   2 &amp; 3 &amp; 5 &amp; -2 \\
+   1 &amp; -2 &amp; 3 &amp; 0 \\
+   -1 &amp; 1 &amp; 0 &amp; 2
+   \end{bmatrix}
+\end{split}\]</div>
+<p><br />
+$<span class="math notranslate nohighlight">\(
+   \det(M_{11}) = 5 \det\begin{bmatrix}
+   3 &amp; 5 &amp; -2 \\
+   -2 &amp; 3 &amp; 0 \\
+   1 &amp; 0 &amp; 2 \\
+   \end{bmatrix}- 0 + 3
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+  \det\begin{bmatrix}
+   2 &amp; 3 &amp; -2 \\
+   1 &amp; -2 &amp; 0 \\
+   -1 &amp; 1 &amp; 2 \\
+   \end{bmatrix} - 1
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(   
+   \det\begin{bmatrix}
+   2 &amp; 3 &amp; 5 \\
+   1 &amp; -2 &amp; 3 \\
+   -1 &amp; 1 &amp; 0 \\
+   \end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{11}) = 5(-30) + 3(0) - (-16) = -150 + 0 + 16 = -134
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   M_{12} = \begin{bmatrix}
+   2 &amp; 0 &amp; 3 &amp; 1 \\
+   -1 &amp; 3 &amp; 5 &amp; -2 \\
+   2 &amp; -2 &amp; 3 &amp; 0 \\
+   3 &amp; 1 &amp; 0 &amp; 2 \\
+   \end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{12}) = -(2 \det\begin{bmatrix}
+   3 &amp; 5 &amp; -2 \\
+   -2 &amp; 3 &amp; 0 \\
+   1 &amp; 0 &amp; 2 \\
+   \end{bmatrix}) = -(2 \times (-30)) = 60
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   M_{13} = \begin{bmatrix}
+   2 &amp; 5 &amp; 3 &amp; 1 \\
+   -1 &amp; 2 &amp; 5 &amp; -2 \\
+   2 &amp; 1 &amp; 3 &amp; 0 \\
+   3 &amp; -1 &amp; 0 &amp; 2 \\
+   \end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{13}) = 2 \det\begin{bmatrix}
+   2 &amp; 3 &amp; -2 \\
+   1 &amp; -2 &amp; 0 \\
+   -1 &amp; 1 &amp; 2 \\
+   \end{bmatrix} - 5
+\)</span><span class="math notranslate nohighlight">\(
+ \  
+\)</span><span class="math notranslate nohighlight">\(  
+   \det\begin{bmatrix}
+   -1 &amp; 5 &amp; -2 \\
+   2 &amp; 3 &amp; 0 \\
+   3 &amp; 0 &amp; 2 \\
+   \end{bmatrix} + 3
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(   
+   \det\begin{bmatrix}
+   -1 &amp; 2 &amp; -2 \\
+   2 &amp; 1 &amp; 0 \\
+   3 &amp; -1 &amp; 2 \\
+   \end{bmatrix} - 1
+\)</span><span class="math notranslate nohighlight">\(   
+\   
+\)</span><span class="math notranslate nohighlight">\(   
+   \det\begin{bmatrix}
+   -1 &amp; 2 &amp; 5 \\
+   2 &amp; 1 &amp; 3 \\
+   3 &amp; -1 &amp; 0 \\
+   \end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{13}) = 2(22) - 5(20) + 0 + 3(28) - (-16) = 44 - 100 + 84 + 16 = 44
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   M_{14} = \begin{bmatrix}
+   2 &amp; 5 &amp; 0 &amp; 1 \\
+   -1 &amp; 2 &amp; 3 &amp; -2 \\
+   2 &amp; 1 &amp; -2 &amp; 0 \\
+   3 &amp; -1 &amp; 1 &amp; 2 \\
+   \end{bmatrix} \)
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{14}) = -(2 \det\begin{bmatrix}
+   2 &amp; 3 &amp; -2 \\
+   1 &amp; -2 &amp; 0 \\
+   -1 &amp; 1 &amp; 2 \\
+   \end{bmatrix}) = -(2 \times 6) = -12
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   M_{15} = \begin{bmatrix}
+   2 &amp; 5 &amp; 0 &amp; 3 \\
+   -1 &amp; 2 &amp; 3 &amp; 5 \\
+   2 &amp; 1 &amp; -2 &amp; 3 \\
+   3 &amp; -1 &amp; 1 &amp; 0 \\
+   \end{bmatrix} \)
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{15}) = 2 \det\begin{bmatrix}
+   2 &amp; 3 &amp; 5 \\
+   1 &amp; -2 &amp; 3 \\
+   -1 &amp; 1 &amp; 0 \\
+   \end{bmatrix} - 5
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(   
+   \det\begin{bmatrix}
+   -1 &amp; 3 &amp; 5 \\
+   2 &amp; -2 &amp; 3 \\
+   3 &amp; 0 &amp; 2 \\
+   \end{bmatrix} + 0
+\)</span><span class="math notranslate nohighlight">\(   
+\
+\)</span><span class="math notranslate nohighlight">\(   
+   \det\begin{bmatrix}
+   -1 &amp; 2 &amp; 5 \\
+   2 &amp; 1 &amp; 3 \\
+   3 &amp; -1 &amp; 0 \\
+   \end{bmatrix} - 3
+\)</span><span class="math notranslate nohighlight">\(   
+\  
+\)</span><span class="math notranslate nohighlight">\(   
+   \det\begin{bmatrix}
+   -1 &amp; 2 &amp; 3 \\
+   2 &amp; 1 &amp; -2 \\
+   3 &amp; -1 &amp; 1 \\
+   \end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+\
+\)</span><span class="math notranslate nohighlight">\(
+   \det(M_{15}) = 2(22) - 5(20) + 0 - 3(-6) = 44 - 100 + 0 - 18 = -74
+\)</span><span class="math notranslate nohighlight">\(
+\
+4. **Hitung Determinan Utama:**
+\
+\)</span><span class="math notranslate nohighlight">\(
+\det(A) = (1)(-134) - (0)(60) + (4)(44) - (-6)(-12) + (3)(-74)
+\det(A) = -134 + 0 + 176 - 72 - 222
+\det(A) = -252
+\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -709,6 +849,29 @@ di mana ( a_{11}, a_{12}, a_{13}, a_{14}, a_{15} ) adalah elemen-elemen baris pe
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">mat</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+            <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
+
+<span class="n">evalue</span><span class="p">,</span> <span class="n">evect</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;innnnni evalue&#39;</span><span class="p">,</span><span class="n">evalue</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">evect</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>innnnni evalue [-1.  5.]
+[[-0.89442719 -0.70710678]
+ [ 0.4472136  -0.70710678]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -751,7 +914,7 @@ di mana ( a_{11}, a_{12}, a_{13}, a_{14}, a_{15} ) adalah elemen-elemen baris pe
       </div>
     </a>
     <a class="right-next"
-       href="TransformasiMatriks.html"
+       href="Tugas5.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -766,7 +929,21 @@ di mana ( a_{11}, a_{12}, a_{13}, a_{14}, a_{15} ) adalah elemen-elemen baris pe
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formulasi-bentuk-determinan">formulasi bentuk determinan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-determinan-dan-invers-metriks">menghitung determinan dan invers metriks</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

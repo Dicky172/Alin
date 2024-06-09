@@ -57,7 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'TransformasiMatriks';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas5';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Determinan matriks" href="Tugas4.html" />
@@ -252,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTransformasiMatriks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugas5.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -282,7 +284,7 @@
       
       
       
-      <li><a href="_sources/TransformasiMatriks.ipynb" target="_blank"
+      <li><a href="_sources/Tugas5.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,9 +355,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -371,46 +371,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-transformasi-matriks-dan-rumusnya">Jenis-Jenis Transformasi Matriks dan Rumusnya</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-identitas">1. <strong>Transformasi Identitas</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus">Rumus:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-skala-scaling">2. <strong>Transformasi Skala (Scaling)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Rumus:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-rotasi-rotation">3. <strong>Transformasi Rotasi (Rotation)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Rumus:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-translasi-translation">4. <strong>Transformasi Translasi (Translation)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-menggunakan-matriks-homogen-3x3">Rumus (Menggunakan Matriks Homogen 3x3):</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-refleksi-reflection">5. <strong>Transformasi Refleksi (Reflection)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-refleksi-terhadap-sumbu-x">Rumus (Refleksi terhadap sumbu-x):</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-refleksi-terhadap-sumbu-y">Rumus (Refleksi terhadap sumbu-y):</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-geser-shear">6. <strong>Transformasi Geser (Shear)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-shear-horizontal">Rumus (Shear horizontal):</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-shear-vertikal">Rumus (Shear vertikal):</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-transformasi-matriks">Penggunaan Transformasi Matriks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implementasi-di-python-numpy">Contoh Implementasi di Python (NumPy)</a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -423,125 +383,101 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="transformasi-matriks">
 <h1>Transformasi Matriks<a class="headerlink" href="#transformasi-matriks" title="Link to this heading">#</a></h1>
 <p>Transformasi matriks adalah operasi yang mengubah satu set data atau vektor menjadi set data atau vektor lain melalui penggunaan matriks. Dalam konteks aljabar linier, transformasi ini sering digunakan untuk melakukan berbagai operasi geometris seperti rotasi, skala, dan translasi pada vektor-vektor dalam ruang Euclidean.</p>
-<section id="jenis-jenis-transformasi-matriks-dan-rumusnya">
-<h2>Jenis-Jenis Transformasi Matriks dan Rumusnya<a class="headerlink" href="#jenis-jenis-transformasi-matriks-dan-rumusnya" title="Link to this heading">#</a></h2>
-<section id="transformasi-identitas">
-<h3>1. <strong>Transformasi Identitas</strong><a class="headerlink" href="#transformasi-identitas" title="Link to this heading">#</a></h3>
-<p>Transformasi identitas adalah transformasi yang tidak mengubah vektor. Matriks identitas biasanya dinotasikan dengan <code class="docutils literal notranslate"><span class="pre">I</span></code>.</p>
-<section id="rumus">
-<h4>Rumus:<a class="headerlink" href="#rumus" title="Link to this heading">#</a></h4>
-<p>[
+<p>##Jenis-Jenis Transformasi Matriks dan Rumusnya</p>
+<p>###1. <strong>Transformasi Identitas</strong>
+Transformasi identitas adalah transformasi yang tidak mengubah vektor. Matriks identitas biasanya dinotasikan dengan <code class="docutils literal notranslate"><span class="pre">I</span></code>.</p>
+<p>####Rumus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 I = \begin{pmatrix}
-1 &amp; 0 \
+1 &amp; 0 \\
 0 &amp; 1
 \end{pmatrix}
-]</p>
-</section>
-</section>
-<section id="transformasi-skala-scaling">
-<h3>2. <strong>Transformasi Skala (Scaling)</strong><a class="headerlink" href="#transformasi-skala-scaling" title="Link to this heading">#</a></h3>
-<p>Transformasi skala memperbesar atau memperkecil vektor dengan faktor tertentu.</p>
-<section id="id1">
-<h4>Rumus:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>###2. <strong>Transformasi Skala (Scaling)</strong>
+Transformasi skala memperbesar atau memperkecil vektor dengan faktor tertentu.</p>
+<p>####Rumus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 S = \begin{pmatrix}
-s_x &amp; 0 \
+s_x &amp; 0 \\
 0 &amp; s_y
 \end{pmatrix}
-]</p>
-<p>Di mana (s_x) dan (s_y) adalah faktor skala sepanjang sumbu-x dan sumbu-y.</p>
-</section>
-</section>
-<section id="transformasi-rotasi-rotation">
-<h3>3. <strong>Transformasi Rotasi (Rotation)</strong><a class="headerlink" href="#transformasi-rotasi-rotation" title="Link to this heading">#</a></h3>
-<p>Transformasi rotasi memutar vektor sebesar sudut tertentu terhadap titik asal.</p>
-<section id="id2">
-<h4>Rumus:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>Di mana $<span class="math notranslate nohighlight">\((s_x) dan (s_y)\)</span>$ adalah faktor skala sepanjang sumbu-x dan sumbu-y.</p>
+<p>###3. <strong>Transformasi Rotasi (Rotation)</strong>
+Transformasi rotasi memutar vektor sebesar sudut tertentu terhadap titik asal.</p>
+<p>####Rumus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 R(\theta) = \begin{pmatrix}
-\cos\theta &amp; -\sin\theta \
+\cos\theta &amp; -\sin\theta \\
 \sin\theta &amp; \cos\theta
 \end{pmatrix}
-]</p>
-<p>Di mana (\theta) adalah sudut rotasi.</p>
-</section>
-</section>
-<section id="transformasi-translasi-translation">
-<h3>4. <strong>Transformasi Translasi (Translation)</strong><a class="headerlink" href="#transformasi-translasi-translation" title="Link to this heading">#</a></h3>
-<p>Translasi menggeser vektor dari satu posisi ke posisi lain. Translasi biasanya tidak bisa direpresentasikan dengan matriks 2x2 biasa, tetapi bisa dengan menggunakan matriks homogen.</p>
-<section id="rumus-menggunakan-matriks-homogen-3x3">
-<h4>Rumus (Menggunakan Matriks Homogen 3x3):<a class="headerlink" href="#rumus-menggunakan-matriks-homogen-3x3" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>Di mana $<span class="math notranslate nohighlight">\((\theta)\)</span>$ adalah sudut rotasi.</p>
+<p>###4. <strong>Transformasi Translasi (Translation)</strong>
+Translasi menggeser vektor dari satu posisi ke posisi lain. Translasi biasanya tidak bisa direpresentasikan dengan matriks 2x2 biasa, tetapi bisa dengan menggunakan matriks homogen.</p>
+<p>####Rumus (Menggunakan Matriks Homogen 3x3):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 T = \begin{pmatrix}
-1 &amp; 0 &amp; t_x \
-0 &amp; 1 &amp; t_y \
+1 &amp; 0 &amp; t_x \\
+0 &amp; 1 &amp; t_y \\
 0 &amp; 0 &amp; 1
 \end{pmatrix}
-]</p>
-<p>Di mana (t_x) dan (t_y) adalah jarak translasi sepanjang sumbu-x dan sumbu-y.</p>
-</section>
-</section>
-<section id="transformasi-refleksi-reflection">
-<h3>5. <strong>Transformasi Refleksi (Reflection)</strong><a class="headerlink" href="#transformasi-refleksi-reflection" title="Link to this heading">#</a></h3>
-<p>Refleksi mencerminkan vektor terhadap sumbu tertentu.</p>
-<section id="rumus-refleksi-terhadap-sumbu-x">
-<h4>Rumus (Refleksi terhadap sumbu-x):<a class="headerlink" href="#rumus-refleksi-terhadap-sumbu-x" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>Di mana $<span class="math notranslate nohighlight">\((t_x) dan (t_y)\)</span>$ adalah jarak translasi sepanjang sumbu-x dan sumbu-y.</p>
+<p>###5. <strong>Transformasi Refleksi (Reflection)</strong>
+Refleksi mencerminkan vektor terhadap sumbu tertentu.</p>
+<p>####Rumus (Refleksi terhadap sumbu-x):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 F_x = \begin{pmatrix}
-1 &amp; 0 \
+1 &amp; 0 \\
 0 &amp; -1
 \end{pmatrix}
-]</p>
-</section>
-<section id="rumus-refleksi-terhadap-sumbu-y">
-<h4>Rumus (Refleksi terhadap sumbu-y):<a class="headerlink" href="#rumus-refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>####Rumus (Refleksi terhadap sumbu-y):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 F_y = \begin{pmatrix}
--1 &amp; 0 \
+-1 &amp; 0 \\
 0 &amp; 1
 \end{pmatrix}
-]</p>
-</section>
-</section>
-<section id="transformasi-geser-shear">
-<h3>6. <strong>Transformasi Geser (Shear)</strong><a class="headerlink" href="#transformasi-geser-shear" title="Link to this heading">#</a></h3>
-<p>Transformasi geser mengubah bentuk vektor dengan menggesernya sepanjang sumbu-x atau sumbu-y.</p>
-<section id="rumus-shear-horizontal">
-<h4>Rumus (Shear horizontal):<a class="headerlink" href="#rumus-shear-horizontal" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>###6. <strong>Transformasi Geser (Shear)</strong>
+Transformasi geser mengubah bentuk vektor dengan menggesernya sepanjang sumbu-x atau sumbu-y.</p>
+<p>####Rumus (Shear horizontal):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 Sh_x = \begin{pmatrix}
-1 &amp; k_x \
+1 &amp; k_x \\
 0 &amp; 1
 \end{pmatrix}
-]</p>
-</section>
-<section id="rumus-shear-vertikal">
-<h4>Rumus (Shear vertikal):<a class="headerlink" href="#rumus-shear-vertikal" title="Link to this heading">#</a></h4>
-<p>[
+\end{split}\]</div>
+<p>####Rumus (Shear vertikal):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 Sh_y = \begin{pmatrix}
-1 &amp; 0 \
+1 &amp; 0 \\
 k_y &amp; 1
 \end{pmatrix}
-]</p>
-<p>Di mana (k_x) dan (k_y) adalah faktor geser horizontal dan vertikal.</p>
-</section>
-</section>
-</section>
-<section id="penggunaan-transformasi-matriks">
-<h2>Penggunaan Transformasi Matriks<a class="headerlink" href="#penggunaan-transformasi-matriks" title="Link to this heading">#</a></h2>
+\end{split}\]</div>
+<p>Di mana $<span class="math notranslate nohighlight">\((k_x) dan (k_y)\)</span>$ adalah faktor geser horizontal dan vertikal.</p>
+<p>##Penggunaan Transformasi Matriks</p>
 <p>Transformasi matriks sangat berguna dalam berbagai bidang seperti grafika komputer, pemrosesan citra, robotika, dan banyak lagi. Dalam grafika komputer, misalnya, transformasi ini digunakan untuk memanipulasi objek-objek dalam ruang 2D dan 3D.</p>
-<section id="contoh-implementasi-di-python-numpy">
-<h3>Contoh Implementasi di Python (NumPy)<a class="headerlink" href="#contoh-implementasi-di-python-numpy" title="Link to this heading">#</a></h3>
+<p>###Contoh Implementasi di Python (NumPy)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Contoh vektor</span>
+<span class="c1">#Contoh vektor</span>
 <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 
-<span class="c1"># Matriks Rotasi 90 derajat</span>
+<span class="c1">#Matriks Rotasi 90 derajat</span>
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)],</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)]])</span>
 
-<span class="c1"># Menerapkan transformasi rotasi</span>
+<span class="c1">#Menerapkan transformasi rotasi</span>
 <span class="n">v_rotated</span> <span class="o">=</span> <span class="n">R</span> <span class="o">@</span> <span class="n">v</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vektor asli:&quot;</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
@@ -724,8 +660,6 @@ k_y &amp; 1
 </div>
 </div>
 </section>
-</section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -773,52 +707,7 @@ k_y &amp; 1
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-transformasi-matriks-dan-rumusnya">Jenis-Jenis Transformasi Matriks dan Rumusnya</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-identitas">1. <strong>Transformasi Identitas</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus">Rumus:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-skala-scaling">2. <strong>Transformasi Skala (Scaling)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Rumus:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-rotasi-rotation">3. <strong>Transformasi Rotasi (Rotation)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Rumus:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-translasi-translation">4. <strong>Transformasi Translasi (Translation)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-menggunakan-matriks-homogen-3x3">Rumus (Menggunakan Matriks Homogen 3x3):</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-refleksi-reflection">5. <strong>Transformasi Refleksi (Reflection)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-refleksi-terhadap-sumbu-x">Rumus (Refleksi terhadap sumbu-x):</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-refleksi-terhadap-sumbu-y">Rumus (Refleksi terhadap sumbu-y):</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-geser-shear">6. <strong>Transformasi Geser (Shear)</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-shear-horizontal">Rumus (Shear horizontal):</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rumus-shear-vertikal">Rumus (Shear vertikal):</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-transformasi-matriks">Penggunaan Transformasi Matriks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-implementasi-di-python-numpy">Contoh Implementasi di Python (NumPy)</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
