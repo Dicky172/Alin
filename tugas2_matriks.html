@@ -380,7 +380,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks">Operasi pada matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matriks">Operasi Matriks</a></li>
 </ul>
             </nav>
@@ -406,27 +405,32 @@ document.write(`
 <p>Matriks adalah kumpulan bilangan simbol atau ekspresi yang di sebut dengan elemen, yang membentuk persegi atau persegi panjang yang di susun menurut baris dan kolom, elemen yang sejajar horizontal di sebut dengan baris matriks, dan elemen yang sejajar vertikal di sebut dengan kolom matriks</p>
 <p>matriks biasa di namai dengan huruf kapital misalnya (A,B,C) dan seterusnya, selain itu indeks dalam matriks di sebut atau di namai dengan huruf non kapital misalnya (a,b,c) dan seterusnya.</p>
 <p>misalnya matriks A =</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 3\
-4 &amp; 5 &amp; 6\
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3\\
+4 &amp; 5 &amp; 6\\
 -1 &amp; -2 &amp; -3
 \end{bmatrix}
-misalnya:
+\end{split}\]</div>
+<p>misalnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-1 &amp; 2 &amp; 3\
+1 &amp; 2 &amp; 3\\
 \end{bmatrix}
-adalah baris pada matriks<br />
-<br />
-dan juga:
+\end{split}\]</div>
+<p>adalah baris pada matriks<br />
+dan juga:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-1\
-4\
+1\\
+4\\
 -1
 \end{bmatrix}
-itu di sebut sebuah kolom pada matriks</p>
-</section>
-<section id="operasi-pada-matriks">
-<h2>Operasi pada matriks<a class="headerlink" href="#operasi-pada-matriks" title="Link to this heading">#</a></h2>
+\end{split}\]</div>
+<p>itu di sebut sebuah kolom pada matriks</p>
 </section>
 <section id="operasi-matriks">
 <h2>Operasi Matriks<a class="headerlink" href="#operasi-matriks" title="Link to this heading">#</a></h2>
@@ -443,42 +447,48 @@ hasil matriks yang di jumlahkan akan memiliki ordo yang sama dengan 2 matriks ya
 <li><p>perkalian matriks
 perkalian matriks dapat di lakukan jika jumlah kolom matriks pertama sama dengan jumlah baris matriks ke dua
 misalkan:<br />
-A=
-$<span class="math notranslate nohighlight">\(
+A=</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
 5 &amp; 2\\
 2 &amp; 3
 \end{bmatrix}
-\)</span><span class="math notranslate nohighlight">\(\
-B =
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>B =</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
 2 &amp; 4 &amp; 2\\
 3 &amp; 1 &amp; 1
 \end{bmatrix}
-\)</span><span class="math notranslate nohighlight">\(\
-misalkan kita mengalikan matriks A dan B dan hasilnya kita beri dengan nama matriks C\
-maka C:
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>misalkan kita mengalikan matriks A dan B dan hasilnya kita beri dengan nama matriks C<br />
+maka C:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
 5*2+3*3 &amp; 5*4+2*1 &amp; 5*2+2*1\\
 2*2+3*3 &amp; 2*4+3*1 &amp; 2*2+3*1
 \end{bmatrix}
-\)</span><span class="math notranslate nohighlight">\(\
-jadi C:\
-\)</span><span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+\end{split}\]</div>
+<p>jadi C:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 10+9 &amp; 20+2 &amp; 10+2\\
 4+9 &amp; 8+3 &amp; 4+3
 \end{bmatrix}
-\)</span><span class="math notranslate nohighlight">\(\
-C:\
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>C:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
 19 &amp; 22 &amp; 12\\
 13 &amp; 11 &amp; 7
 \end{bmatrix}
-\)</span>$</p></li>
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
 <li><p>Pengurangan matrix
 Pengurangan pada matriks dapat di lakukan jika baris dan kolomnya sama, atau kedua matriks berordo sama
 matriks satu dan yang lainnya di kurangkan sesuai komponen komponen yang seletak
@@ -486,18 +496,24 @@ hasil matriks yang di kurangankan akan memiliki ordo yang sama dengan 2 matriks 
 </ol>
 <p>4.Transpose Matriks
 Transpose adalah pembuatan matriks baru dari matriks lama, caranya asdalah menukar posisi baris dengan kolom, simpelnya tranpose jika kamu punya matriks berordo 2x3 setelah di transpose akan jadi matriks 3x2<br />
-contohnya Matriks A:<br />
+contohnya Matriks A:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-2 &amp; 4 &amp; 2\
+2 &amp; 4 &amp; 2\\
 3 &amp; 1 &amp; 1
 \end{bmatrix}
-setelah di transpose akan menjadi:<br />
-A:<br />
+\end{split}\]</div>
+<p>setelah di transpose akan menjadi:<br />
+A:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{bmatrix}
-2 &amp; 3\
-4 &amp; 1\
+2 &amp; 3\\
+4 &amp; 1\\
 2 &amp; 1
-\end{bmatrix}</p>
+\end{bmatrix}
+\end{split}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Penjumlahan pada matriks</span>
@@ -733,7 +749,6 @@ matriks sesudah di transpose
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-matriks">Apa itu matriks?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks">Operasi pada matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matriks">Operasi Matriks</a></li>
 </ul>
   </nav></div>
